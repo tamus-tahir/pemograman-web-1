@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <form>
+        <!-- label digunakan untuk memberi informasi dari input form -->
+        <!-- 
+            penggunaan for dan id untuk menghubungkan label dan input
+            pada saat kita klik label kursor diarahkan ke input sesuai dengan id nya
+            lebh detail tentang id ==> nanti dibahas di css/js
+        -->
+        <!-- required => input wajib di isi -->
+        <label for="nama">Nama :</label>
+        <input type="text" id="nama" required>
+        <br>
+
+        <!-- placeholder untuk memberi teks petunjuk -->
+        <label for="email">Email :</label>
+        <input type="email" id="email" placeholder="Masukan email aktif">
+        <br>
+
+        <!-- type="password" ==> menyembunyikan karakter yang diinput -->
+        <label for="password">Password :</label>
+        <input type="password" id="password">
+        <br>
+
+        <!-- type="date" ==> jika data yang diinput berupa tanggal -->
+        <label for="tanggal">Tanggal :</label>
+        <input type="date" id="tanggal">
+        <br>
+
+        <!-- min ==> nilai minimum input -->
+        <!-- max ==> nilai maximum input -->
+        <!-- type="number" ==> jika data yang diinput hanya boleh angka -->
+        <label for="number">Number :</label>
+        <input type="number" id="number" min="5" max="10">
+        <br>
+
+        <!-- digunakan untuk single choice -->
+        <!-- name"" digunkan agar pilihan tidak boleh lebih dari satu -->
+        <!-- digunakan jika pilihannya sedikit -->
+        <label>Jenis Kelamin :</label>
+        <input type="radio" name="gender">Pria
+        <input type="radio" name="gender">Wanita
+        <br>
+
+        <!-- digunakan untuk single choice berbentuk dropdown -->
+        <!-- digunakan jika pilihannya banyak -->
+        <label>Pilih :</label>
+        <select>
+            <option>Pilihan Pertama</option>
+            <option>Pilihan Kedua</option>
+            <option>Pilihan Ketiga</option>
+        </select>
+        <br>
+
+        <!-- digunakan untuk multi choice -->
+        <label>Multi Choice :</label>
+        <input type="checkbox"> <label>Pilihan Pertama</label>
+        <input type="checkbox"> <label>Pilihan Kedua</label>
+        <input type="checkbox"> <label>Pilihan Ketiga</label>
+        <br>
+
+        <!-- digukanan untuk input yang teksnya banyak -->
+        <label>Teks Area</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <br>
+
+        <!-- reset menghapus semua input -->
+        <button type="reset">Hapus</button>
+
+        <!-- mengirim data dibutuhkan bahasa pemograman untuk mengelolanya -->
+        <button type="submit">Kirim</button>
+    </form>
+
+</body>
+
+</html>
