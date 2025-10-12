@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 
+    Flexbox (singkatan dari Flexible Box Layout) adalah sistem layout CSS satu dimensi (1D) yang dirancang untuk menyusun dan merapikan elemen dalam baris (row) atau kolom (column), terutama saat ukuran item tidak tetap atau dinamis
+    */
+    .flex-container {
+      height: 500px;
+      display: flex;
+      flex-direction: row;
+      background-color: DodgerBlue;
+      /* properti dalam Flexbox CSS yang digunakan untuk mengizinkan item flex pindah ke baris/kolom baru jika tidak muat dalam satu baris/kolom */
+      /* flex-wrap: wrap; */
+
+      /* 
+      properti dalam Flexbox (dan juga Grid) yang digunakan untuk mengatur posisi elemen di sepanjang main axis (sumbu utama) 
+      value: flex-start, flex-end, center, space-between, space-around, space-evenly
+      */
+      justify-content: center;
+      /* 
+      align-items adalah properti di Flexbox (juga bisa dipakai di CSS Grid) yang digunakan untuk mengatur posisi item sepanjang cross axis 
+      value: stretch, flex-start, flex-end, center, baseline
+      */
+      align-items: center;
+    }
+
+    .flex-item {
+      background-color: #f1f1f1;
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+      text-align: center;
+      line-height: 75px;
+      font-size: 30px;
+    }
+
+    /* latihan ukuran box */
+    .container {
+      display: flex;
+    }
+
+    .card {
+      background: aqua;
+      margin: 10px;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .alamat {
+      /* mengatur ukuran */
+      flex: 2;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="flex-container">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>  
+  </div>
+
+  <div class="container">
+    <div class="card alamat">Jl. Perintis Kemerdekaan, Tamalanrea, Kec. Tamalanrea, Kota Makassar, Sulawesi Selatan 90245</div>
+    <div class="card">info@unitama.ac.id</div>
+    <div class="card">081188888888</div>  
+  </div>
+
+</body>
+</html>

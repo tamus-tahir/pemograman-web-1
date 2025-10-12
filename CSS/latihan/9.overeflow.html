@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 
+    padding digunakan untuk mengatur jarak antara konten elemen dan batas (border) elemen tersebut.. 
+
+      1 nilai (semua sisi sama)
+      padding: 10px;
+
+      2 nilai (atas & bawah | kanan & kiri) 
+      padding: 10px 20px;
+
+      3 nilai (atas | kanan & kiri | bawah)
+      padding: 10px 20px 30px;
+
+      4 nilai (atas | kanan | bawah | kiri)
+      padding: 10px 20px 30px 40px;
+
+      Kamu juga bisa menulis padding per sisi:
+      padding-top: 10px;
+      padding-right: 15px;
+      padding-bottom: 20px;
+      padding-left: 25px;
+
+      overflow adalah properti yang digunakan untuk mengatur bagaimana tampilan konten yang melebihi ukuran elemen
+    */
+    .kotak {
+      width: 200px;
+      height: 200px;
+      border: 1px solid black;
+      padding: 30px;
+      overflow: scroll;
+    }
+
+    .kotak2 {
+      width: 200px;
+      height: 200px;
+      border: 1px solid black;
+      padding: 30px;
+      overflow: hidden;
+    }
+
+    /* 
+      jika auto dan content tidak melebihi pembungkusnya
+      maka scroll tidak akan ditampilkan
+     */
+    .kotak3 {
+      width: 200px;
+      height: 200px;
+      border: 1px solid black;
+      padding: 30px;
+      overflow: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="kotak">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ullam dolores saepe alias repellat. Quam dolores accusamus pariatur veritatis ea quos, aut quaerat facilis hic rerum nemo suscipit amet expedita necessitatibus repudiandae enim dolorum deserunt itaque doloribus delectus aliquam molestiae tempore sunt temporibus! At ut reprehenderit laudantium, rem numquam repudiandae.</div>
+
+  <div class="kotak2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ullam dolores saepe alias repellat. Quam dolores accusamus pariatur veritatis ea quos, aut quaerat facilis hic rerum nemo suscipit amet expedita necessitatibus repudiandae enim dolorum deserunt itaque doloribus delectus aliquam molestiae tempore sunt temporibus! At ut reprehenderit laudantium, rem numquam repudiandae.</div>
+
+  <div class="kotak3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ullam dolores saepe alias repellat. Quam dolores accusamus pariatur veritatis ea quos, aut quaerat facilis hic rerum nemo suscipit amet expedita necessitatibus repudiandae enim dolorum deserunt itaque doloribus delectus aliquam molestiae tempore sunt temporibus! At ut reprehenderit laudantium, rem numquam repudiandae.</div>
+
+</body>
+</html>

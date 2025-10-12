@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 
+    Properti display dalam CSS adalah salah satu properti terpenting untuk mengatur cara elemen HTML ditampilkan di halaman web 
+    Setiap tag memiliki nilai default untuk properti display
+    Baik itu inline atau pun block
+    Kita bisa mengubah display default
+    Inline lebar dan tinggi elemen hanya selebar konten dan kita tidak dapat mengaturnya
+    Supaya dapat mengaturnya kita dapat merubah menjadi inline block
+    */
+    .display-inline {
+      display: inline;
+    }
+
+    .display-block {
+      display: block;
+    }
+
+    .display-inline-block {
+      display: inline-block;
+      width: 300px;
+    }
+
+    .bg-red {
+      background: red;
+    }
+  </style>
+</head>
+<body>
+  
+  
+  <!-- block: membuat baris baru -->
+  <p class="bg-red">Teknik Informatika</p>
+  <p>Sistem Informasi</p>
+
+  <br><br>
+
+  <!-- inline: tidak membuat baris baru -->
+  <a href="#" class="bg-red">Teknik Informatika</a>
+  <a href="#" class="display-inline-block bg-red">Sistem Informasi</a>
+
+  <br><br>
+
+  <p class="display-inline">Teknik Informatika</p>
+  <p class="display-inline">Sistem Informasi</p>
+
+  <br><br>
+
+  <a href="#" class="display-block">Teknik Informatika</a>
+  <a href="#" class="display-block">Sistem Informasi</a>
+
+</body>
+</html>

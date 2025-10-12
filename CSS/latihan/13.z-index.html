@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 
+    jika anda mengubah position menjadi relative, absolute atau fixed maka anda dapat menggunakan property z-index
+    z-index adalah properti yang digunakan untuk mengatur urutan tumpukan (stacking order) elemen — yaitu, elemen mana yang muncul di atas atau di bawah elemen lain saat mereka saling tumpang tindih.
+    */
+
+    div {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+    }
+
+    .kotak1 {
+      background: red;
+    
+    }
+
+    .kotak2 {
+      background: green;
+      top: 20px;
+      left: 20px;
+      z-index: 2;
+    }
+
+    .kotak3 {
+      background: blue;
+      top: 40px;
+      left: 40px;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <div class="kotak1"></div>
+  <div class="kotak2"></div>
+  <div class="kotak3"></div>
+
+</body>
+</html>
