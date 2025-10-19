@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wisata Sulsel</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <style>
+    /* ===== general ===== */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .align-right {
+      text-align: right;
+    }
+
+    .container {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+      box-sizing: border-box;
+    }
+
+    .btn-link {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      cursor: pointer;
+      font-family: "Montserrat", sans-serif;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .btn-link:hover {
+      background-color: #0056b3; 
+      color: #fff;
+      text-decoration: none;
+      outline: none;
+    }
+
+    /* ====== nav ====== */
+    nav {
+      background-color: #007BFF; 
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 20px;
+      font-size: 16px;
+      transition: color 0.3s ease;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    nav a:hover {
+      color: #FFD700; 
+    }
+
+    nav a:first-child {
+      margin-right: auto; /* Logo atau judul ke kiri */
+      font-size: 18px;
+    }
+
+    nav a.active {
+      color: #FFD700; 
+      border-bottom: 2px solid #FFD700; 
+      font-weight: bold;
+    }
+
+    /* ====== hero ====== */
+    .hero img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    /* ====== footer ====== */
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #007BFF;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 14px;
+      font-family: "Montserrat", sans-serif;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+    }
+
+    .container-content {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    /* ===== wisata ===== */
+    .wrapper-wisata {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .card-wisata {
+      border: 1px solid rgb(211, 211, 211);
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .card-wisata img {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      width: 100%;
+      height: 200px;
+    }
+
+    .card-wisata img:hover {
+      transform: scale(1.05);
+      transition: transform 0.8s ease-in-out;
+    }
+
+    .card-wisata .card-body {
+      padding: 20px;
+    }
+
+    .card-wisata .card-title {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      color: #333333;
+    }
+
+    .card-wisata .card-text {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #555555;
+      margin-bottom: 1rem;
+    }
+
+    /* ===== video ===== */
+    .wrapper-video iframe {
+      width: 100%;
+      border-radius: 10px;
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- nav -->
+  <header>
+      <nav>
+      <a href="beranda.html" ><strong>PARIWISATA SULSEL</strong></a> 
+      <a href="beranda.html" class="active">Beranda</a>
+      <a href="galeri.html" >Galeri</a>
+      <a href="pesanan.html" >Pesanan</a>
+      <a href="kontak.html" >Kontak</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- hero -->
+    <section class="hero">
+      <img src="img/hero.jpg" alt="Wisata Sulsel" >
+    </section>
+    
+    <!-- content -->
+    <div class="container">
+
+      <div class="container-content">
+
+        <!-- wisata -->
+        <section class="wrapper-wisata">
+
+            <div class="card-wisata">
+              <img src="img/wisata-1.jpg" alt="Wisata Sulsel" >
+              <div class="card-body">
+                <h5 class="card-title">Wisata 1</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, nisi? Iste natus expedita nobis distinctio. Molestias natus architecto corrupti labore.</p>
+                <div class="align-right">
+                  <a href="form.html" class="btn-link">Pesan</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-wisata">
+              <img src="img/wisata-2.jpg" alt="Wisata Sulsel" >
+              <div class="card-body">
+                <h5 class="card-title">Wisata 2</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, nisi? Iste natus expedita nobis distinctio. Molestias natus architecto corrupti labore.</p>
+                <div class="align-right">
+                  <a href="form.html" class="btn-link">Pesan</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-wisata">
+              <img src="img/wisata-3.jpg" alt="Wisata Sulsel" >
+              <div class="card-body">
+                <h5 class="card-title">Wisata 3</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, nisi? Iste natus expedita nobis distinctio. Molestias natus architecto corrupti labore.</p>
+                <div class="align-right">
+                  <a href="form.html" class="btn-link">Pesan</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-wisata">
+              <img src="img/wisata-4.jpg" alt="Wisata Sulsel" >
+              <div class="card-body">
+                <h5 class="card-title">Wisata 4</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, nisi? Iste natus expedita nobis distinctio. Molestias natus architecto corrupti labore.</p>
+                <div class="align-right">
+                  <a href="form.html" class="btn-link">Pesan</a>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <!-- video -->
+        <section class="wrapper-video">
+          <iframe width="33%" height="315" src="https://www.youtube.com/embed/Z136igOVXgQ?si=cRrVgZpsfGWb-p0N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+          <iframe width="33%" height="315" src="https://www.youtube.com/embed/UPkMkIOzej8?si=dQG-dSNQgzve5C3I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+          <iframe width="33%" height="315" src="https://www.youtube.com/embed/sTmgaP2gYsk?si=cCKR1IgQJBMGp6o3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- footer -->
+  <footer>
+    <h5>WISATA SULSEL 2025</h5>
+  </footer>
+  
+</body>
+</html>

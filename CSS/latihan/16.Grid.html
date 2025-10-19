@@ -4,8 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    /* 
+    Grid adalah sistem layout dua dimensi (2D).
+    Grid  adalah sistem tata letak (layout system) yang memungkinkan kamu menyusun elemen-elemen halaman web dalam baris dan kolom secara presisi dan fleksibel.
+    */
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 2fr;
+      /* 
+      Ketika kamu membuat grid dan tidak secara eksplisit menentukan semua baris menggunakan grid-template-rows, browser akan otomatis membuat baris tambahan jika diperlukan. grid-auto-rows digunakan untuk mengatur tinggi dari baris-baris otomatis tersebut.
+      */
+      grid-auto-rows: 200px;
+      /* 
+      gap adalah properti CSS yang digunakan untuk mengatur jarak antar item di dalam layout Grid atau Flexbox.
+      */
+      gap: 10px;
+      justify-content: center; /* center horizontal */
+      align-items: center;     /* center vertical */
+    }
+
+    .item {
+      background-color: #f1f1f1;
+      /* margin: 10px; */
+      text-align: center;
+      font-size: 30px;
+    }
+
+  </style>
 </head>
 <body>
   
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>  
+    <div class="item">4</div>  
+    <div class="item">5</div>  
+    <div class="item">6</div>  
+    <div class="item">7</div>  
+  </div>
+
+
 </body>
 </html>
