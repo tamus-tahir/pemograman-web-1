@@ -182,6 +182,11 @@ footer {
   margin: 30px auto;
 }
 
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;

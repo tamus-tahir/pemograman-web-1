@@ -1,0 +1,42 @@
+/* ====== RESPONSIVE UNTUK HP ====== */
+@media (max-width: 768px) {
+
+  /* ===== nav ===== */
+  nav {
+    flex-direction: column; 
+    align-items: flex-start; 
+    padding: 10px 20px;
+  }
+
+  nav a {
+    margin: 8px 0; 
+    display: block;
+  }
+
+  nav a:first-child {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  /* ===== kontak ===== */
+    .wrapper-kontak {
+    grid-template-columns: 1fr;
+  }
+
+  /* ===== wisata ===== */
+
+  .container-content {
+    grid-template-columns: 1fr; 
+  }
+
+  .wrapper-wisata {
+    grid-template-columns: 1fr;
+  }
+
+  /* ===== galeri ====== */
+    .wrapper-galeri img {
+    width: 100%; 
+  }
+
+
+}
